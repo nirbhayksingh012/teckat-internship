@@ -8,28 +8,33 @@ function App(){
 //   {
 //     console.log("hello world");
 //   }
-const student1 = {
-  name:  "Nirbhay",
-  age: "5",
-  address:  "jamshedpur",
-};
+// const student1 = {
+//   name:  "Nirbhay",
+//   age: "5",
+//   address:  "jamshedpur",
+// };
 
-const student2 = {
-  name: "Nirbhay",
-  age: "5",
-  address: "Mumbai",
-}
-const fun1 =() => {
-  const num1 =1;
-  const num2 =2;
-  const sum = num1+ num2;
-  console.log(sum);
-};
-if(student1.name===student2.name){
-  fun1();
-}
-else{
-  console.log("hello")
+// const student2 = {
+//   name: "Nirbhay",
+//   age: "5",
+//   address: "Mumbai",
+// }
+// const fun1 =() => {
+//   const num1 =1;
+//   const num2 =2;
+//   const sum = num1+ num2;
+//   console.log(sum);
+// };
+// if(student1.name===student2.name){
+//   fun1();
+// }
+// else{
+//   console.log("hello")
+// }
+const arr1 = [1,2,3,4,5,6]
+
+for (let item of arr1){
+  console.log(item);
 }
   return (
     <div className="App">
