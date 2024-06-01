@@ -1,7 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+function App(){
+// let str = "hello"
+// let str2 = "world"
 
-function App() {
+// if (str === "hello" && str2 === "world")
+//   {
+//     console.log("hello world");
+//   }
+const student1 = {
+  name:  "Nirbhay",
+  age: "5",
+  address:  "jamshedpur",
+};
+
+const student2 = {
+  name: "Nirbhay",
+  age: "5",
+  address: "Mumbai",
+}
+const fun1 =() => {
+  const num1 =1;
+  const num2 =2;
+  const sum = num1+ num2;
+  console.log(sum);
+};
+if(student1.name===student2.name){
+  fun1();
+}
+else{
+  console.log("hello")
+}
   return (
     <div className="App">
       <header className="App-header">
