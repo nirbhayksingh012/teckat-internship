@@ -31,11 +31,56 @@ function App(){
 // else{
 //   console.log("hello")
 // }
-const arr1 = [1,2,3,4,5,6]
+// const arr1 = [1,2,3,4,5,6]
 
-for (let item of arr1){
-  console.log(item);
-}
+// for (let item of arr1){
+//   console.log(item);
+// }
+// const people =[
+//   {name: "nirbhay" ,age:67},
+//   {name: "kuswant" ,age:99},
+// ]
+// const employees = [
+//   {name:"nirbhay",age:19,salary: 600},
+//   {name:"raj",age:19,salary: 600},
+//   {name:"ayush",age:19,salary: 600},
+// ];
+// const mappedEmployees = employees.map((item) => {
+//   return {
+//     ...item,
+//     salary: item.salary + 100,
+//   };
+// }, []);
+// console.log("employees", employees);
+// console.log("mappedEmployees", mappedEmployees);
+// for (let item of pepole) {
+//   console.log(`name:${person.name}, age: ${person.age}`);
+// }2
+// people.forEach((person) => {
+//   // console.log(`name:${person.name}, age: ${person.age}`);
+// });
+// const employee = {
+//   name: "puja",
+//   age: 89,
+//   occupation: "hmmm....",
+// };
+// console.log(employee.name);
+const products =[
+  {id: 1001,name: "laptop", price: 1000, category: "Electronics"},
+  {id: 1002,name: "shirt", price: 50, category: "clothing"},
+  {id: 1003,name: "coffe maker", price: 808, category: "Home appliances"},
+  {id: 1004,name: "Headphones", price: 1200, category: "Electronics"},
+  {id: 1005,name: "pants", price: 600, category: "clothing"},
+];
+const filteredProducts = products.filter((item) =>{
+  return item.category === "clothing";
+});
+console.log("filteredProduct", filteredProducts);
+
+const foundProducts = products.filter((item) =>{
+  return item.id === 1002;
+});
+console.log("foundProducts", foundProducts);
   return (
     <div className="App">
       <header className="App-header">
