@@ -1,23 +1,23 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import React from 'react';
+import { useForm } from 'react-hook-form';
 import { IStudent } from '../interface/student';
 
-const createStudent: React.FC = ():any => {
+const CreateStudent : React.FC  = ():any => {
+    const{
+        register ,
+        handleSubmit,
+        formState : { errors},
+    } = useForm<IStudent>({mode : "all"});
 
-        const{
-            register ,
-            handleSubmit,
-            formState : { errors},
-        } = useForm<IStudent>({mode : "all"});
+   const createNewStudent = (data : IStudent) => {
+    console.log(data);
+    
+   } ;
+   
 
-const createNewStudent = (data: IStudent) =>
-    {
-        console.log(data);
-        
-    }
   return (
     <>
-   <div className="create_student_section">
+ <div className="create_student_section">
         <form onSubmit={handleSubmit(createNewStudent)}>
           <div>
             <label htmlFor="name"></label>
@@ -77,4 +77,6 @@ const createNewStudent = (data: IStudent) =>
   );
 };
 
-export default createStudent;
+
+
+export default CreateStudent;
