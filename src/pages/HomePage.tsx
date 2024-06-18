@@ -29,9 +29,9 @@ function HomePage() {
         <Link to="/student">Student Details</Link>
       </button>
 
-      <hr />
-      <br />
-      <br />
+      <hr/>
+      <br/>
+      <br/>
 
 
 

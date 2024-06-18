@@ -11,6 +11,8 @@ const CreateStudent : React.FC  = ():any => {
 
    const createNewStudent = (data : IStudent) => {
     console.log(data);
+
+    localStorage.setItem("students", JSON.stringify(data));
     
    } ;
    
